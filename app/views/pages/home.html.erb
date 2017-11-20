@@ -1,11 +1,15 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 50%), url(<%= asset_path "melinda-pack-233281.jpg" %>);">
+  <div class="banner-content">
+    <h1>E-class 2.0</h1>
+    <div class="button-flex">
+      <div class="flex-button">
+        <%= link_to "Student", new_user_session_path, class: "home-button button-student" %>
+      </div>
+      <div class="flex-button">
+        <%= link_to "Teacher", new_teacher_session_path, class: "home-button button-teacher" %>
+      </div>
+    </div>
+  </div>
+</div>
 
-<ul>
-  <li>
-    <%= link_to "Student Sign-up", new_user_registration_path %>
-  </li>
-  <li>
-    <%= link_to "Professory Sign-up", new_teacher_registration_path %>
-  </li>
-</ul>
+
