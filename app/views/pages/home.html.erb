@@ -1,35 +1,15 @@
-<style>
-  .home-container {
-    text-align: center;
-    padding: 50px;
-  }
-  .home-button {
-    text-decoration: none !important;
-    border: solid 1px blue;
-    border-radius: 50px;
-    padding: 20px 100px;
-  }
-  .home-button:hover {
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-  }
-  .button-student {
-
-  }
-  .button-teacher {
-
-  }
-</style>
-
-<div class="home-container">
-  <h1>Sign in as:</h1>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.6) 50%), url(<%= asset_path "melinda-pack-233281.jpg" %>);">
+  <div class="banner-content">
+    <h1>E-class 2.0</h1>
+    <div class="button-flex">
+      <div class="flex-button">
         <%= link_to "Student", new_user_registration_path, class: "home-button button-student" %>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="flex-button">
         <%= link_to "Teacher", new_teacher_registration_path, class: "home-button button-teacher" %>
       </div>
     </div>
   </div>
 </div>
+
+
