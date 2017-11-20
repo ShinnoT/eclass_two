@@ -1,11 +1,15 @@
 <h1>Pages#home</h1>
 <p>Find me in app/views/pages/home.html.erb</p>
 
-<ul>
-  <li>
-    <%= link_to "Student Sign-up", new_user_registration_path %>
-  </li>
-  <li>
-    <%= link_to "Professory Sign-up", new_teacher_registration_path %>
-  </li>
-</ul>
+
+<h1>Sign in as:</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+      <%= link_to "Student", new_user_registration_path %>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <%= link_to "Teacher", new_teacher_registration_path %>
+    </div>
+  </div>
+</div>
