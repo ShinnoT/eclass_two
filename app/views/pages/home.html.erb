@@ -1,15 +1,35 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<style>
+  .home-container {
+    text-align: center;
+    padding: 50px;
+  }
+  .home-button {
+    text-decoration: none !important;
+    border: solid 1px blue;
+    border-radius: 50px;
+    padding: 20px 100px;
+  }
+  .home-button:hover {
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  }
+  .button-student {
 
+  }
+  .button-teacher {
 
-<h1>Sign in as:</h1>
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-6">
-      <%= link_to "Student", new_user_registration_path %>
-    </div>
-    <div class="col-xs-12 col-sm-6">
-      <%= link_to "Teacher", new_teacher_registration_path %>
+  }
+</style>
+
+<div class="home-container">
+  <h1>Sign in as:</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <%= link_to "Student", new_user_registration_path, class: "home-button button-student" %>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <%= link_to "Teacher", new_teacher_registration_path, class: "home-button button-teacher" %>
+      </div>
     </div>
   </div>
 </div>
