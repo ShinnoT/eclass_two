@@ -5,4 +5,6 @@ class Teacher < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates_presence_of :first_name, :last_name
+  has_many :courses
+  has_many :students, through: :courses
 end
