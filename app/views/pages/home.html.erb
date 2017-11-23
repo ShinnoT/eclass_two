@@ -3,10 +3,18 @@
     <h1>E-class 2.0</h1>
     <div class="button-flex">
       <div class="flex-button">
-        <%= link_to "Student", new_user_session_path, class: "home-button button-student" %>
+        <% unless user_signed_in? %>
+          <%= link_to "Student", new_user_session_path, class: "home-button button-student" %>
+        <% else %>
+          <%= link_to "Student", courses_path, class: "home-button button-student" %>
+        <% end %>
       </div>
       <div class="flex-button">
-        <%= link_to "Teacher", new_teacher_session_path, class: "home-button button-teacher" %>
+        <% unless teacher_signed_in? %>
+          <%= link_to "Teacher", new_teacher_session_path, class: "home-button button-teacher" %>
+        <% else %>
+          <%= link_to "Teacher", courses_path, class: "home-button button-teacher" %>
+        <% end %>
       </div>
     </div>
   </div>

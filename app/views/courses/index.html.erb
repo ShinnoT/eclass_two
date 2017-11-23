@@ -1,0 +1,21 @@
+<style>
+  .index-container > h1 {
+    text-align: center;
+  }
+  .index-container > p {
+    margin: 50px;
+  }
+</style>
+
+<div class="index-container">
+  <h1>Banner here</h1>
+  <h1>----------------------------------------------</h1>
+  <h1>Top courses here...</h1>
+  <% unless @courses.empty? %>
+    <% @courses.each do |course| %>
+      <p><%= course.name %> is taught by <%= course.teacher %>;</p>
+    <% end %>
+    <% else %>
+    <p>no courses yet, still working on seed file...</p>
+  <% end %>
+</div>
