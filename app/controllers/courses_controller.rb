@@ -22,9 +22,23 @@ class CoursesController < ApplicationController
     end
   end
 
+  def enroll
+    @course = Course.find(id: params[:id])
+    @user = current_user
+    if @course.course_key == user_input_params
+      @user.course = @course
+    else
+      #display error message or something
+    end
+  end
+
   private
 
   def course_params
     params.require(:course).permit(:name, :course_key)
+  end
+
+  def user_input_params
+    params.permit(:course_key_input)
   end
 end
