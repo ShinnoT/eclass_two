@@ -14,6 +14,12 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
+    @course.teacher = current_teacher
+    if @course.save
+      redirect_to #somwhere
+    else
+      render # :new OR "restaurants/show"
+    end
   end
 
   private
