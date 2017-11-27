@@ -24,9 +24,8 @@ class CoursesController < ApplicationController
 
   def enroll
     @course = Course.find(id: params[:id])
-    @user = current_user
     if @course.course_key == user_input_params
-      @user.course = @course
+      @course.user = current_user
     else
       #display error message or something
     end
