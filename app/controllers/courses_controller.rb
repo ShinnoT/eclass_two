@@ -8,7 +8,17 @@ class CoursesController < ApplicationController
     @course = Course.find(id: params[:id])
   end
 
-  def new
+  # def new
+  #   @course = Course.new
+  # end
 
+  def create
+    @course = Course.new(course_params)
+  end
+
+  private
+
+  def course_params
+    params.require(:course).permit(:name, :course_key)
   end
 end
