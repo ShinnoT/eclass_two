@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :courses, only: [:index, :show, :new, :create]
   # get '/courses/:id/enroll', to: 'courses#enroll'
-  post '/courses/:id/enroll', to: 'courses#enroll', as: 'enroll'
+  # post '/courses/:id/enroll', to: 'courses#enroll', as: 'enroll'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
