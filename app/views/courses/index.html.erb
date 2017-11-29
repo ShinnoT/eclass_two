@@ -13,7 +13,7 @@
   <h1>Top courses here...</h1>
   <% unless @courses.empty? %>
     <% @courses.each do |course| %>
-      <p><%= course.name %> is taught by <%= course.teacher %>;</p>
+      <p><%= course.name %> is taught by Professor <%= course.teacher %>;</p>
     <% end %>
     <% else %>
     <p>no courses yet, still working on seed file...</p>

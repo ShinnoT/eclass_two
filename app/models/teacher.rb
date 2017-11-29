@@ -6,5 +6,4 @@ class Teacher < ApplicationRecord
 
   validates_presence_of :first_name, :last_name
   has_many :courses, dependent: :destroy
-  has_many :users, through: :courses
 end
