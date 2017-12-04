@@ -1,10 +1,81 @@
 .form-inputs {
-  margin: 0 auto;
+  // margin: 0 auto;
   // padding: 50px;
-  width: 300px;
+  width: 500px;
+  background-color: rgba(173,246,177,0.7);
+  padding: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -230px 0 0 -252px;
+  h2 {
+    text-align: center;
+    margin: 20px;
+  }
+}
+
+.form-inputs2 {
+  // margin: 0 auto;
+  // padding: 50px;
+  width: 500px;
+  background-color: rgba(173,246,177,0.7);
+  padding: 50px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -300px 0 0 -252px;
+  h2 {
+    text-align: center;
+    margin: 10px;
+  }
 }
 
 .form-actions {
   margin: 0 auto;
-  padding: 50px;
+  text-align: center;
+  // padding: 50px;
+}
+
+.form-button-style {
+  // text-align: center;
+  // padding: 3px 150px;
+  width: 400px;
+}
+
+@media (max-width: 600px) {
+  .form-inputs {
+    // background-color: red;
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: static;
+    margin: 0 auto;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+
+  .form-inputs2 {
+    // background-color: red;
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: static;
+    margin: 0 auto;
+    padding: 5px 50px;
+    border-radius: 0;
+    // padding-top: 10px;
+    .help-block {
+      font-size: 12px;
+      margin: 2px 0;
+    }
+    .teacher_password {
+      margin-bottom: 7px;
+    }
+  }
+
+  .form-button-style {
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px 50px;
+  }
 }
