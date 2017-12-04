@@ -28,7 +28,7 @@
   margin: -300px 0 0 -252px;
   h2 {
     text-align: center;
-    margin: 20px;
+    margin: 10px;
   }
 }
 
@@ -48,19 +48,25 @@
   .form-inputs {
     // background-color: red;
     width: 100%;
+    height: calc(100vh - 70px);
     position: static;
     margin: 0 auto;
+    padding-bottom: 0;
   }
 
-.form-inputs2 {
+  .form-inputs2 {
     // background-color: red;
     width: 100%;
+    height: calc(100vh - 70px);
     position: static;
     margin: 0 auto;
+    padding: 5px 50px;
+    // padding-top: 10px;
   }
 
   .form-button-style {
     width: 100%;
+    margin-top: 5px;
     padding: 5px 50px;
   }
 }
