@@ -4,3 +4,15 @@
 .index-container > p {
   margin: 50px;
 }
+
+.index-container {
+  display: flex;
+  .index-content {
+    // padding: 50px;
+    margin: 30px;
+    padding: 50px;
+    // background-color: rgb(118,120,237);
+    // border-radius: 20px;
+    // box-shadow: 0 0 15px 10px rgb(138,162,169);
+  }
+}
