@@ -1,14 +1,22 @@
 <!-- scss stylesheet for this page in app/assets/stylesheets/pages/_secondhome.scss -->
 
 <div class="index-container">
-  <h1>Banner here</h1>
-  <h1>----------------------------------------------</h1>
-  <h1>Top courses here...</h1>
-  <% unless @courses.empty? %>
-    <% @courses.each do |course| %>
-      <p><%= course.name %> is taught by Professor <%= course.teacher %>;</p>
+  <div class="banner">
+    <%= image_tag "volkan-olmez-73767.jpg" %>
+    <div class="banner-content">
+      <h1>"To study is to be human, to fail is to be devine."</h1>
+      <h2>~ Shinno</h2>
+    </div>
+  </div>
+  <div class="index-content">
+    <h1>----------------------------------------------</h1>
+    <h1>Top courses here...</h1>
+    <% unless @courses.empty? %>
+      <% @courses.each do |course| %>
+        <p><%= course.name %> is taught by Professor <%= course.teacher %>;</p>
+      <% end %>
+      <% else %>
+      <p>no courses yet, still working on seed file...</p>
     <% end %>
-    <% else %>
-    <p>no courses yet, still working on seed file...</p>
-  <% end %>
+  </div>
 </div>
