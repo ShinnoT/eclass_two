@@ -4,3 +4,13 @@
 .index-container > p {
   margin: 50px;
 }
+
+.index-container {
+  display: flex;
+  .index-content {
+    // padding: 50px;
+    margin: 50px;
+    padding: 50px;
+    background-color: red;
+  }
+}
