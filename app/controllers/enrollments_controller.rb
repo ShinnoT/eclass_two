@@ -1,6 +1,7 @@
 class EnrollmentsController < ApplicationController
   def create
-    @course = Course.find(id: params[:id])
+    # @course = Course.find(id: params[:id])
+    @course = Course.find(params[:id])
     if enrollment_params == @course.course_key
       @enrollment = Enrollment.new(enrollment_params)
       @enrollment.course = @course
