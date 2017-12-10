@@ -1,0 +1,8 @@
+<%= @course.name %>
+
+<div id="form">
+  <%= simple_form_for [@course, @enrollment] do |f| %>
+    <%= f.input :enrollment_key %>
+    <%= f.button :submit %>
+  <% end %>
+</div>
