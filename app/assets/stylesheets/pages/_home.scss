@@ -25,6 +25,7 @@
     color: rgba(0,0,0,0.6);
     text-align: center;
     height: calc(100vh - 70px);
+    width: 100%;
      /*if you have a 70px navbar => height: calc(100vh - 70px); */
      /*if you dont have a navbar then => height: 100vh;*/
     background-size: cover !important;
