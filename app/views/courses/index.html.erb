@@ -14,6 +14,7 @@
     <% unless @courses.empty? %>
       <% @courses.each do |course| %>
         <p><%= course.name %> is taught by Professor <%= course.teacher %>;</p>
+        <p><%= link_to course.name, course_path(course) %> is taught by Professor <%= course.teacher %>;</p>
       <% end %>
       <% else %>
       <p>no courses yet, still working on seed file...</p>
