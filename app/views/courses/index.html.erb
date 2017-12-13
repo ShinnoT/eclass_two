@@ -9,15 +9,30 @@
     </div>
   </div>
   <div class="index-content">
-    <h1>----------------------------------------------</h1>
-    <h1>Top courses here...</h1>
-    <% unless @courses.empty? %>
-      <% @courses.each do |course| %>
-        <p><%= course.name %> is taught by Professor <%= course.teacher %>;</p>
-        <p><%= link_to course.name, course_path(course) %> is taught by Professor <%= course.teacher %>;</p>
-      <% end %>
-      <% else %>
-      <p>no courses yet, still working on seed file...</p>
-    <% end %>
+    <h1>ECOURSE</h1>
+    <button type="button" class="custom-button">Enroll</button>
+    <button type="button" class="custom-button2">New Course</button>
+    <div class="icons">
+      <i class="fa fa-cloud-upload" aria-hidden="true"></i>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <i class="fa fa-laptop" aria-hidden="true"></i>
+    </div>
+    <div class="cards">
+      <div class="row">
+        <% unless @courses.empty? %>
+          <% @courses[0..2].each do |course| %>
+            <div class="col-xs-4">
+              <div class="card">
+                <div class="card-content">
+                  <p><%= link_to course.name, course_path(course) %> is taught by Professor <%= course.teacher.first_name %>;</p>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        <% else %>
+          <p>no courses yet, still working on seed file...</p>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

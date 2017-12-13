@@ -4,7 +4,9 @@
   height: calc(100vh - 70px);
   text-align: center;
   // padding: 0 5%;
-  background: radial-gradient(circle, rgba(17, 5, 19, 0.8), rgba(20, 7, 35, 0.4), rgb(0, 0, 0)), url(volkan-olmez-73767.jpg) no-repeat;
+  // background: radial-gradient(circle, rgba(17, 5, 19, 0.8), rgba(20, 7, 35, 0.4), rgb(0, 0, 0)), url(volkan-olmez-73767.jpg) no-repeat;
+  // background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(volkan-olmez-73767.jpg) no-repeat;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) 90%), url(new-books.jpg) no-repeat;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -27,7 +29,7 @@
   // }
   .banner-content2 {
     // color: rgb(0, 35, 91);
-    color: white;
+    color: black;
     position: relative;
     width: 80%;
     // padding: 100px 15px;
@@ -40,10 +42,16 @@
     // left: auto;
     h1 {
       margin: 0;
-      font-size: 80px;
+      font-size: 50px;
+      font-weight: bold;
+      color: #ED4A4A;
+      // background-color: #AFFFF5;
     }
     h2 {
       margin: 0;
+      color: #ED4A4A;
+      font-size: 25px;
+      // background-color: #AFFFF5;
       // opacity: 1;
     }
   }
